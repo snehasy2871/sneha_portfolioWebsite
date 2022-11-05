@@ -31,7 +31,7 @@ section{
     padding: 100px 0;
 }
 .max-width{
-    max-width: 1300px;
+    max-width: 1500px;
     padding: 0 80px;
     margin: auto;
 }
@@ -363,16 +363,16 @@ section .title::after{
     background: crimson;
 }
 .skills-content .right .html::before{
-    width: 90%;
+    width: 70%;
 }
 .skills-content .right .css::before{
-    width: 60%;
-}
-.skills-content .right .js::before{
     width: 80%;
 }
-.skills-content .right .php::before{
+.skills-content .right .js::before{
     width: 50%;
+}
+.skills-content .right .php::before{
+    width: 80%;
 }
 .skills-content .right .mysql::before{
     width: 70%;
@@ -688,8 +688,136 @@ section .title::after{
     }
 }
 
+ 
+
+.qualifications{
+    color:#fff;
+    background: #111;
+}
 
 
+.column {
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+  }
+
+.column .card .icon {
+    float: left;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	 background: #4c4c4c;
+	 	border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+  border-top-right-radius: 20%;
+  border-top-left-radius: 20%;
+}
+
+.column .card .icon .fa {
+    float: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    color: crimson;
+		border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+  border-top-right-radius: 20%;
+  border-top-left-radius: 20%;
+}
+
+.column .card .slide {
+    /* float: left; */
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+	border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+  border-top-right-radius: 20%;
+  border-top-left-radius: 20%;
+}
+
+.column .card .slide.slide1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transition: .7s;
+    transform: translateY(100px);
+}
+
+.column .card:hover .slide.slide1{
+    /* float: left; */
+    transform: translateY(0px);
+	
+}
+
+.column .card .slide.slide2 {
+    float: left;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: .8s;
+    transform: translateY(-100px);
+    box-shadow: wheat;
+	background:#D3d3d3
+}
+
+.column .card:hover .slide.slide2{
+    float: left;
+    transform: translateY(0);
+}
+
+.column .card .slide.slide2::after{
+    /* float: left; */
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    bottom: 15px;
+    left: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: black;
+
+}
+
+.column .card .slide.slide2 .content p {
+float: left;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: crimson;
+}
+
+.column .card .slide.slide2 .content h3 {
+    float: left;
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-size: 24px;
+    text-align: center;
+    color: crimson;
+} 
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 
 
